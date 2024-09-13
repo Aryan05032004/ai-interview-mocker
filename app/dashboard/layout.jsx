@@ -1,13 +1,25 @@
-import React from 'react'
-import Header from './_components/Header'
+// import React from 'react'
+// import Header from './_components/Header'
 
-const DashboardLayout = ({children}) => {
+// const DashboardLayout = ({children}) => {
+//   return (
+//     <div>
+//        <Header/>
+//         {children}
+//     </div>
+//   )
+// }
+
+// export default DashboardLayout
+import React from 'react';
+import Header from './_components/Header';
+
+const DashboardLayout = ({ children }) => {
   return (
     <div>
-       <Header/>
-        {children}
-    </div>
-  )
-}
+    <Header/>
+    {children}</div>
+  );
+};
 
-export default DashboardLayout
+export default DashboardLayout;
