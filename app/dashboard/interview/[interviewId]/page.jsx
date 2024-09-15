@@ -7,10 +7,11 @@ import { eq } from 'drizzle-orm';
 import Webcam from 'react-webcam';
 import { WebcamIcon } from 'lucide-react';
 import { Button } from "@/components/ui/button";
-import { Lightbulb } from 'lucide-react';  // Ensure you import Button
+import { Lightbulb } from 'lucide-react';
+import Link from 'next/link';  // Ensure you import Button
 
 function Interview({ params }) {
-    const [interviewData, setInterviewData] = useState(null); // Initialize as null
+    const [interviewData, setInterviewData] = useState(); // Initialize as null
     const [webCamEnabled, setWebCamEnabled] = useState(false);
 
     useEffect(() => {
@@ -81,7 +82,10 @@ function Interview({ params }) {
             </div>
 
              <div  className='flex justify-end items-end'>
+             <Link href={'/dashboard/interview/'+params.interviewId+'/start'}>
              <Button>Start interview</Button>
+             </Link>
+          
 
              </div>
             
