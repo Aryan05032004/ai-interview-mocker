@@ -2,6 +2,7 @@
 import { UserButton } from '@clerk/nextjs';
 import DashboardLayout from '../dashboard/layout';
 import AddNewInterview from './_components/AddNewInterview';
+import InterviewList from './_components/InterviewList';
 
 const Dashboard = () => {
   return (
@@ -12,6 +13,8 @@ const Dashboard = () => {
       <div className='grid grid-cols-1 md:grid-cols-3 my-5'>
         <AddNewInterview/>
       </div>
+      {/* Previous Interview List */}
+      <InterviewList/>
     </div>
   );
 };
